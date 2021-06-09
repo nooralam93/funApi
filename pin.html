@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Number</title>
+</head>
+<body>
+    <input id="pin" type="text">
+    <!-- <p id="pin"></p> -->
+    <br>
+    <button onclick="pinNumber()">Click me</button>
+
+
+    <script>
+    function pinNumber(num){
+        var num = [1, 2 ,4 ,3 ,5]
+        // pinMach = [];
+        for(var i = 0; i < num.length; i++){
+            var element = num[i]
+            var index = pinMach.indexOf(element);
+        random = Math.random(num)*9;
+        round = Math.round(random);
+        // if(index ==-1){
+        // pinMach.push(element)
+        // }
+        // console.log(round)
+        document.getElementById('pin').innerText = round;
+
+    // document.getElementById('pin').innerText = 'Pin match'
+    }
+    }
+    // pinNumber()
+    </script>
+</body>
+</html>
